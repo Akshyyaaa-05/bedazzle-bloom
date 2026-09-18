@@ -15,7 +15,7 @@
   /* Where a completed registration should be POSTed (FormData:
      name, phone, email, items, total, proof). Leave null and the
      form just shows the confirmation screen without sending. */
-  const ENDPOINT = null;
+  const ENDPOINT = const ENDPOINT = "/.netlify/functions/register";
 
   /* ─── helpers ────────────────────────────────────────────── */
 
