@@ -1,6 +1,5 @@
 [build]
-  base = "bedazzle"
-  publish = "."
+  publish = "bedazzle"
 
 [functions]
   directory = "netlify/functions"
