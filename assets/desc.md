@@ -1,1 +1,0 @@
-contains upi qr png
