@@ -224,7 +224,15 @@
       submitBtn.disabled = true;
       submitBtn.textContent = 'sending…';
       try {
-        await fetch(ENDPOINT, { method: 'POST', body });
+        const response = await fetch(ENDPOINT, {
+  method: "POST",
+  body
+});
+
+if (!response.ok) {
+  const errorText = await response.text();
+  throw new Error(errorText || "Registration failed");
+}
       } catch (err) {
         submitBtn.disabled = false;
         submitBtn.textContent = 'Submit Registration';
